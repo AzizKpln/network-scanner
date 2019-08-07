@@ -12,7 +12,7 @@ def get_arg():
         parser.add_option("-l","--look_always",dest="look_always",action="store",help="This Parameter shows you io addresses,mac addresses and company names in the network every 5 sec")
         (options,arguments)=parser.parse_args()
         if not options.ip_range and not options.look_always:
-                parser.error("Please Use The '-r' Parameter")
+                parser.error("Please Use The '-h' Parameter")
         return options
 
 def scan(ip_range):
